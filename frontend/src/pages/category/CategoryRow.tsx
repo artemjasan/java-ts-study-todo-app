@@ -21,8 +21,7 @@ const CategoryRow: React.FC<CategoryItemProps> = ({ category, onEdit, onDelete }
             label="Edit"
           />
           <BaseButton
-            // BUG: accidentally wired delete button to edit handler/modal
-            onClick={() => showModal('CATEGORY_DELETE', { category, onEdit })}
+            onClick={() => showModal('CATEGORY_DELETE', { category, onDelete })}
             className="bg-red-500 hover:bg-red-600 focus:ring-red-700"
             label="Delete"
           />
