@@ -10,6 +10,27 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+  <!-- Latta Recorder Script -->
+  <script src="https://static.latta.ai/recorder/latta.js"></script>
+  <script>
+    Latta.init({
+      apiKey: '18cb5d512469bee4a7debb91652a202d67341dcafaf44e73f55bd8ff56553c94bdb1dc13f886919e54df240c37058123033ed509a6e2153cf6c59545e15a563b',
+      console: {
+        enabled: true,
+        logLevel: ['error', 'warn', 'info', 'log', 'debug', 'trace']
+      },
+      fetch: {
+        enabled: true
+      },
+      mode: {
+        recording: 'automatic',
+        checkoutLength: 20000
+      },
+      theme: 'auto',
+      language: 'en'
+    });
+  </script>
+
   <title>React App</title>
 </head>
 

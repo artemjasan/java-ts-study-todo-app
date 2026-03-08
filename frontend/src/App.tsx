@@ -8,6 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col h-screen justify-between">
       <Header />
+     
       <Main />
       <Footer />
     </div>

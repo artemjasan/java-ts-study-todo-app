@@ -11,7 +11,8 @@ const CategoryForm: React.FC<CategoryFormProps> = ({ onSubmit }) => {
   const { register, handleSubmit, reset } = useForm<CategoryName>();
 
   const submitHandler = (data: CategoryName) => {
-    onSubmit(data);
+    // BUG: callback never invoked, form seems to submit but nothing happens
+    // onSubmit(data);
     reset();
   };
 
